@@ -3,6 +3,7 @@
 用来本地测试网测试发币安全性
 
 -------0xc1a686339c6e2cfd2d26f6b3b30ee5d7----发币合约地址
+
 account unlock 0xc1a686339c6e2cfd2d26f6b3b30ee5d7 -p123456
 
 // 部署合约
@@ -31,6 +32,7 @@ state get resource 0xc1a686339c6e2cfd2d26f6b3b30ee5d7 0xc1a686339c6e2cfd2d26f6b3
 
 
 ------ 0xa0d8e8bc48488466188b163d62b2c919 ------受害者地址
+
 account unlock 0xa0d8e8bc48488466188b163d62b2c919 -p123456
 
 // 初始化balance
@@ -43,6 +45,7 @@ state get resource 0xa0d8e8bc48488466188b163d62b2c919 0xc1a686339c6e2cfd2d26f6b3
 
 
 ------- 0xac3e5a1bda65d73b1b893892548578f7 ---黑客地址
+
 //初始化balance
 
 account execute-function --function 0xc1a686339c6e2cfd2d26f6b3b30ee5d7::MyCoin::init_balance_script -s 0xac3e5a1bda65d73b1b893892548578f7 -b
